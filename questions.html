@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    Movie Quiz Trivia
+  </title>
+  <script style="text/javascript" src="global.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+<body onload="next_question()">
+  
+  
+  <!-- main content -->
+  
+  
+    <section id="home">
+      <div id="hero">
+        <div id="hero-image" class="animated slideInDown">
+          
+          
+          <div id="question-wrapper" class="clearfix">
+            
+            <!-- question 1 -->
+            
+            <div id="question1" class="clearfix">
+              <h1> WHERE ARE YOU ON <b>GAME DAY</b>?</h1>
+    
+            <a href="#"> 
+              <label>
+                <div id="q1o1">
+                  <input type="radio" value="a" name="question1" id="answer101" />
+                  In line, ready to be the first one in the stadium. I never miss a home game.
+                </label>
+              </div>
+            </a>
+            
+            <a href="#"> 
+               <label>
+              <div id="q1o2">
+                <input type="radio" value="a" name="question1" id="answer102" />
+                Tail-gating outside the stadium, who needs to go inside when we got this big screen?
+              </label>
+              </div>
+            </a>
+            <a href="#"> 
+              <label>
+              <div id="q1o3">
+                <input type="radio" value="a" name="question1" id="answer103" />
+                At the local pub with the rest of the fans.
+              </label>
+              </div>
+            </a>
+            <a href="#"> 
+              <label>
+              <div id="q1o4">
+                <input type="radio" value="a" name="question1" id="answer104" />
+                Comfy on my couch.
+              </label>
+              </div>
+            </a>
+          </div>
+     
+          
+        
+        
+        <!-- question 2 -->
+       
+            
+            <div id="question2" class="clearfix">
+              <h1> WHAT'S YOUR TYPICAL GAME DAY 
+                <br><b>ATTIRE</b>?</br></h1>
+    
+            <a href="#"> 
+              <label>
+                <div id="q1o1">
+                  <input type="radio" value="a" name="question2" id="answer101" />
+                 Red from head to toe. My vanity plate is huskers, my grill and my cooler. My car is even red.
+                </label>
+              </div>
+            </a>
+            
+            <a href="#"> 
+              <label>
+              <div id="q1o2">
+                <input type="radio" value="a" name="question2" id="answer102" />
+                Face paint, corn head. Go big or go home!
+              </label>
+              </div>
+            </a>
+            <a href="#"> 
+              <label>
+              <div id="q1o3">
+                <input type="radio" value="a" name="question2" id="answer103" />
+                Huskers shirt, hoodie and jeans.
+              </label>
+              </div>
+            </a>
+            <a href="#"> 
+              <label>
+              <div id="q1o4">
+                <input type="radio" value="a" name="question2" id="answer104" />
+                I do not actually own a huskers shirt, so I threw on some red and black.
+              </label>
+              </div>
+            </a>
+          </div>
+          
+          
+          <!-- question 3 -->
+       
+            
+              <div id="question3" class="clearfix">
+                <h1> WHAT TYPE OF <b>'GAME WATCHER'</b> <br>ARE YOU?</br></h1>
+    
+              <a href="#"> 
+                <label>
+                  <div id="q1o1">
+                    <input type="radio" value="a" name="question3" id="answer101" />
+                   I spout out random stats about the players and analyze the plays for the benefit
+                   of others watching.
+                  </label>
+                </div>
+              </a>
+            
+              <a href="#"> 
+                <label>
+                <div id="q1o2">
+                  <input type="radio" value="a" name="question3" id="answer102" />
+                   I spend the whole time 'sushing' people so I can hear.
+                </label>
+                </div>
+              </a>
+              <a href="#"> 
+                <label>
+                <div id="q1o3">
+                  <input type="radio" value="a" name="question3" id="answer103" />
+                  I usually yell and throw things at the screen.
+                </label>
+                </div>
+              </a>
+              <a href="#"> 
+                <label>
+                <div id="q1o4">
+                  <input type="radio" value="a" name="question3" id="answer104" />
+                  I’m usually talking with my friends and casually interrupt “what just happened” when I miss a play.
+                </label>
+                </div>
+              </a>
+            </div>
+          
+       
+      
+        
+        
+       
+       </div>
+        
+     <button id="submit">next question</button>
+        
+        <h1><div id="result">
+          yes!
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- <div id="quiz">
+    <div id="horray"> HORRAY!!</div>
+    <div id="nogood"> Looks like you need to watch some more movies..</div>
+    <div id="total_result">
+    </div>
+    <div id="question1">
+    question: What was the main character's name in the movie 'Clueless'?
+    <br>choices: a) Paula b) Barbie c) Cher</br>
+    </div>
+    <div id="question2">
+    question: How many theatrical versions of Batman Series have there been?
+    <br>
+    choices: a) 5 b) 12 c) 10
+    </br>
+    </div>
+    <div id="question3">
+    question: Clint Eastwood gave us the immortal line, 'Go ahead... make my day' in what film?,
+    <br>
+    choices: a) Dirty Harry b) Magnum Force c) Tightrope
+    </br>
+    </div>
+    <div id="question4">
+    question: What was the name of the island on which King Kong was discovered in the original 1933 movie? <br>
+    choices: a) Ape Island b) Monster Island c) Skull Island
+    </br>
+    </div>
+    <br>
+    <input type="text" id="answer">
+    <button id="submitter">
+    Submit
+    </button>
+    </div>
+    <div id="question_result">
+    </div>
+    <button id="next">
+    Next Question
+    </button>
+    <br> -->
+
+
+
+
+  </body>
+
+
+
+
+
+  <script style="text/javascript" src="global.js">
+  </script>
+  </html>
