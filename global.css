@@ -28,6 +28,8 @@ a {
   color:black;
 }
 
+
+
 /*clear fix*/
 .clearfix::after {
   content:" ";
@@ -58,9 +60,9 @@ a {
   background-color:red;
  
 }
-/*input[type=radio]{
+input[type=radio]{
     display:none
-}*/
+}
 #wrapper {
   padding-top:5%;
 }
@@ -167,6 +169,14 @@ b{
 #q1o4:hover {
   border-color:black;
 }
+
+#q1o1:active,
+#q1o2:active,
+#q1o3:active,
+#q1o4:active {
+  border-color:black;
+
+}
   #q2o1,
   #q2o2,
   #q2o3,
@@ -191,6 +201,13 @@ b{
   #q2o2:hover,
   #q2o3:hover,
   #q2o4:hover {
+    border-color:black;
+
+  }
+  #q2o1:active,
+  #q2o2:active,
+  #q2o3:active,
+  #q2o4:active {
     border-color:black;
 
   }
