@@ -146,9 +146,19 @@ answer1020.onclick = process_answer_submission4;
 
 var final_total = function() {
   
+  if (score >= 15){
+    result.innerHTML= "diehard";
+  }
   
+  if (score < 15 && score > 7){
+    result.innerHTML= "med";
+  }
+  
+  if (score <=7){
+    result.innerHTML= "bad";
+  }
 
-  result.innerHTML = "You're a bad" + score ;
+  
    }
 
 
