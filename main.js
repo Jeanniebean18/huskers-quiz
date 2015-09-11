@@ -1,11 +1,12 @@
 
 var counter = 0;
 var score = 0;
-
+var home = document.getElementById("home");
 var answer101 = document.getElementById("answer101");
 var answer102 = document.getElementById("answer102");
 var answer103 = document.getElementById("answer103");
 var answer104 = document.getElementById("answer104");
+var question0 = document.getElementById("question0");
 var question1 = document.getElementById("question1");
 var question2 = document.getElementById("question2");
 var question3 = document.getElementById("question3");
@@ -18,7 +19,7 @@ var submit = document.getElementById("submit");
 var result = document.getElementById("result");
 // var nogood = document.getElementById("nogood");
 
-var questions = [question1, question2, question3, question4]
+var questions = [question0, question1, question2, question3, question4]
 // var answers = ["c", "b", "a", "c"]
 
 // var buttonSubmit = document.getElementById("submitter"); // calling divs by div id and assigning to variables.
@@ -86,9 +87,7 @@ var process_answer_submission = function() {
       next_submit();
     }
     
-    else {
-      next_submit();
-    }
+  
     
  
 }
@@ -96,7 +95,7 @@ var process_answer_submission = function() {
 
 
 var game_over = function() {
-  if (counter < 4) {
+  if (counter <= 4) {
     return false;  
   } else {
     return true;
@@ -114,7 +113,7 @@ var next_submit = function() {
   }
 }
 
-submit.onclick = process_answer_submission; // when next button click start next_submit // stores function process. doesn't run function now. 
+home.onclick = process_answer_submission; // when next button click start next_submit // stores function process. doesn't run function now.
 
 var final_total = function() {
   // var score_announce = "You answered " + score + " out of 4 questions correct";

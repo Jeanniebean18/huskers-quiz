@@ -68,9 +68,10 @@ input[type=radio]{
 }
 
 
-#question1 {
+#question0 {
   display:block;
 }
+#question1,
 #question2,
 #question3,
 #question4 {
@@ -135,7 +136,7 @@ footer {
   
 }
 
-b{
+b {
   color:black;
 }
 
@@ -154,7 +155,7 @@ b{
   float:left;
   width:22%;
   margin:1%;
-  border:1px solid white;
+  border:1px solid;
   height:300px;
   color:white;
   text-align:center;
@@ -170,10 +171,10 @@ b{
   border-color:black;
 }
 
-#q1o1:active,
-#q1o2:active,
-#q1o3:active,
-#q1o4:active {
+#q1o1:focus,
+#q1o2:focus,
+#q1o3:focus,
+#q1o4:focus {
   border-color:black;
 
 }

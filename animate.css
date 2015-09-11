@@ -11,6 +11,13 @@
   
 }
 
+.animated.delay6 {
+  -webkit-animation-delay:5s;animation-delay:5s;
+  -webkit-transform-origin:50% 50%;
+  transform-origin:50% 50%;
+  
+}
+
 .transformOrigin {
   -webkit-transform-origin:50% 50%;
   transform-origin:50% 50%;
