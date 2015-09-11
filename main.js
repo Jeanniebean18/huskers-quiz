@@ -59,52 +59,29 @@ var clear_question_result = function() {
 }
 
 
-var process_answer_submission = function() {
- if (answer101.checked==true){
+var process_answer_submission1 = function() {
+   
    score+=4;
+   next_submit();
    // answer101.checked=false;
    
  }
- if (answer102.checked==true){
-   score+=3;
-   // answer102.checked=false;
-   
- }
-   if (answer103.checked==true){
-    score+=2;
-    // answer103.checked=false;
-    
-
-  }
-  if (answer104.checked==true){
-      score+=1;
-      // answer104.checked=false;
-     
-    }
-    
-    if (answer105.checked==true){
-      score+=4;
-      // answer101.checked=false;
-      
-    }
-    if (answer106.checked==true){
-      score+=3;
-      // answer102.checked=false;
-      
-    }
-      if (answer107.checked==true){
-       score+=2;
-       // answer103.checked=false;
-      
-
-     }
-     if (answer108.checked==true){
-         score+=1;
-         // answer104.checked=false;
-         
-       }
  
-     }
+ var process_answer_submission2 = function() {
+    
+    score+=4;
+    next_submit();
+    // answer101.checked=false;
+   
+  }
+ 
+ 
+
+    
+    
+ 
+   
+
 
 
 
@@ -129,11 +106,11 @@ var next_submit = function() {
   }
 }
 
-answer101.onclick = next_submit;
+answer101.onclick = process_answer_submission1;
 answer102.onclick = next_submit;
 answer103.onclick = next_submit;
 answer104.onclick = next_submit;
-answer105.onclick = next_submit;
+answer105.onclick = process_answer_submission2;
 answer106.onclick = next_submit;
 answer107.onclick = next_submit;
 answer108.onclick = next_submit;
@@ -155,7 +132,7 @@ answer1020.onclick = next_submit;
 
 var final_total = function() {
   
-  process_answer_submission();
+  
 
   result.innerHTML = "You're a bad" + score ;
    }
