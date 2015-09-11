@@ -69,11 +69,25 @@ var process_answer_submission1 = function() {
  
  var process_answer_submission2 = function() {
     
-    score+=4;
+    score+=3;
     next_submit();
     // answer101.checked=false;
    
   }
+  var process_answer_submission3 = function() {
+    
+     score+=2;
+     next_submit();
+     // answer101.checked=false;
+   
+   }
+   var process_answer_submission4 = function() {
+    
+      score+=1;
+      next_submit();
+      // answer101.checked=false;
+   
+    }
  
  
 
@@ -107,25 +121,25 @@ var next_submit = function() {
 }
 
 answer101.onclick = process_answer_submission1;
-answer102.onclick = next_submit;
-answer103.onclick = next_submit;
-answer104.onclick = next_submit;
-answer105.onclick = process_answer_submission2;
-answer106.onclick = next_submit;
-answer107.onclick = next_submit;
-answer108.onclick = next_submit;
-answer109.onclick = next_submit;
-answer1010.onclick = next_submit;
-answer1011.onclick = next_submit;
-answer1012.onclick = next_submit;
-answer1013.onclick = next_submit;
-answer1014.onclick = next_submit;
-answer1015.onclick = next_submit;
-answer1016.onclick = next_submit;
-answer1017.onclick = next_submit;
-answer1018.onclick = next_submit;
-answer1019.onclick = next_submit;
-answer1020.onclick = next_submit;
+answer102.onclick = process_answer_submission2;
+answer103.onclick = process_answer_submission3;
+answer104.onclick = process_answer_submission4;
+answer105.onclick = process_answer_submission1;
+answer106.onclick = process_answer_submission2;
+answer107.onclick = process_answer_submission3;
+answer108.onclick = process_answer_submission4;
+answer109.onclick = process_answer_submission1;
+answer1010.onclick = process_answer_submission2;
+answer1011.onclick = process_answer_submission3;
+answer1012.onclick = process_answer_submission4;
+answer1013.onclick = process_answer_submission1;
+answer1014.onclick = process_answer_submission2;
+answer1015.onclick = process_answer_submission3;
+answer1016.onclick = process_answer_submission4;
+answer1017.onclick = process_answer_submission1;
+answer1018.onclick = process_answer_submission2;
+answer1019.onclick = process_answer_submission3;
+answer1020.onclick = process_answer_submission4;
 
 
 // when next button click start next_submit // stores function process. doesn't run function now.
